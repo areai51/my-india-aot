@@ -17,12 +17,10 @@ import * as import9 from '@angular/core/src/metadata/view';
 import * as import10 from '@angular/core/src/linker/component_factory';
 import * as import11 from './app.component.css.shim';
 import * as import12 from './layouts/side-bar/side-bar.component';
-import * as import13 from './shared/services/our-leaders.service';
-import * as import14 from './layouts/our-leaders/our-leaders.component';
-import * as import15 from './layouts/side-bar/side-bar.component.ngfactory';
-import * as import16 from './layouts/our-leaders/our-leaders.component.ngfactory';
-import * as import17 from '@angular/http/src/http';
-import * as import18 from '@angular/core/src/linker/element_ref';
+import * as import13 from '@angular/router/src/directives/router_outlet';
+import * as import14 from './layouts/side-bar/side-bar.component.ngfactory';
+import * as import15 from '@angular/router/src/router_outlet_map';
+import * as import16 from '@angular/core/src/linker/component_factory_resolver';
 const nodeDebugInfos_AppComponent_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import1.AppComponent],import1.AppComponent,{})];
 var renderType_AppComponent_Host:import2.RenderComponentType = (null as any);
 class _View_AppComponent_Host0 extends import3.DebugAppView<any> {
@@ -62,12 +60,8 @@ const nodeDebugInfos_AppComponent0:import0.StaticNodeDebugInfo[] = [
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
-    import13.OurLeadersService,
-    import14.OurLeadersComponent
-  ]
-  ,import14.OurLeadersComponent,{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
+  new import0.StaticNodeDebugInfo([import13.RouterOutlet],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{})
@@ -85,11 +79,10 @@ class _View_AppComponent0 extends import3.DebugAppView<import1.AppComponent> {
   _text_5:any;
   _el_6:any;
   _text_7:any;
-  _el_8:any;
-  /*private*/ _appEl_8:import4.AppElement;
-  _OurLeadersService_8_4:import13.OurLeadersService;
-  _OurLeadersComponent_8_5:import14.OurLeadersComponent;
-  _text_9:any;
+  _text_8:any;
+  _el_9:any;
+  /*private*/ _appEl_9:import4.AppElement;
+  _RouterOutlet_9_5:import13.RouterOutlet;
   _text_10:any;
   _text_11:any;
   _text_12:any;
@@ -101,7 +94,7 @@ class _View_AppComponent0 extends import3.DebugAppView<import1.AppComponent> {
     this._el_0 = this.renderer.createElement(parentRenderNode,'div',this.debug(0,0,0));
     this.renderer.setElementAttribute(this._el_0,'class','col-2');
     this._appEl_0 = new import4.AppElement(0,(null as any),this,this._el_0);
-    var compView_0:any = import15.viewFactory_SideBarComponent0(this.viewUtils,this.injector(0),this._appEl_0);
+    var compView_0:any = import14.viewFactory_SideBarComponent0(this.viewUtils,this.injector(0),this._appEl_0);
     this._SideBarComponent_0_4 = new import12.SideBarComponent();
     this._appEl_0.initComponent(this._SideBarComponent_0_4,[],compView_0);
     compView_0.create(this._SideBarComponent_0_4,[],(null as any));
@@ -114,15 +107,11 @@ class _View_AppComponent0 extends import3.DebugAppView<import1.AppComponent> {
     this._el_6 = this.renderer.createElement(this._el_2,'div',this.debug(6,3,2));
     this.renderer.setElementAttribute(this._el_6,'class','main-container');
     this._text_7 = this.renderer.createText(this._el_6,'\n    GHJKHGCV\n    ',this.debug(7,3,30));
-    this._el_8 = this.renderer.createElement(this._el_6,'our-leaders',this.debug(8,5,4));
-    this._appEl_8 = new import4.AppElement(8,6,this,this._el_8);
-    var compView_8:any = import16.viewFactory_OurLeadersComponent0(this.viewUtils,this.injector(8),this._appEl_8);
-    this._OurLeadersService_8_4 = new import13.OurLeadersService(this.parentInjector.get(import17.Http));
-    this._OurLeadersComponent_8_5 = new import14.OurLeadersComponent(this._OurLeadersService_8_4,new import18.ElementRef(this._el_8));
-    this._appEl_8.initComponent(this._OurLeadersComponent_8_5,[],compView_8);
-    compView_8.create(this._OurLeadersComponent_8_5,[],(null as any));
-    this._text_9 = this.renderer.createText(this._el_6,'\n    ',this.debug(9,5,31));
-    this._text_10 = this.renderer.createText(this._el_6,'\n  ',this.debug(10,6,42));
+    this._text_8 = this.renderer.createText(this._el_6,'\n    ',this.debug(8,5,38));
+    this._el_9 = this.renderer.createElement(this._el_6,'router-outlet',this.debug(9,6,4));
+    this._appEl_9 = new import4.AppElement(9,6,this,this._el_9);
+    this._RouterOutlet_9_5 = new import13.RouterOutlet(this.parentInjector.get(import15.RouterOutletMap),this._appEl_9.vcRef,this.parentInjector.get(import16.ComponentFactoryResolver),(null as any));
+    this._text_10 = this.renderer.createText(this._el_6,'\n  ',this.debug(10,6,35));
     this._text_11 = this.renderer.createText(this._el_2,'\n',this.debug(11,7,8));
     this._text_12 = this.renderer.createText(parentRenderNode,'\n',this.debug(12,8,6));
     this.init([],[
@@ -134,8 +123,8 @@ class _View_AppComponent0 extends import3.DebugAppView<import1.AppComponent> {
       this._text_5,
       this._el_6,
       this._text_7,
-      this._el_8,
-      this._text_9,
+      this._text_8,
+      this._el_9,
       this._text_10,
       this._text_11,
       this._text_12
@@ -145,15 +134,17 @@ class _View_AppComponent0 extends import3.DebugAppView<import1.AppComponent> {
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
     if (((token === import12.SideBarComponent) && (0 === requestNodeIndex))) { return this._SideBarComponent_0_4; }
-    if (((token === import13.OurLeadersService) && (8 === requestNodeIndex))) { return this._OurLeadersService_8_4; }
-    if (((token === import14.OurLeadersComponent) && (8 === requestNodeIndex))) { return this._OurLeadersComponent_8_5; }
+    if (((token === import13.RouterOutlet) && (9 === requestNodeIndex))) { return this._RouterOutlet_9_5; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
     if (((this.numberOfChecks === 0) && !throwOnChange)) { this._SideBarComponent_0_4.ngOnInit(); }
-    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._OurLeadersComponent_8_5.ngOnInit(); }
     this.detectContentChildrenChanges(throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
+  }
+  destroyInternal():void {
+    this.debug(9,6,4);
+    this._RouterOutlet_9_5.ngOnDestroy();
   }
 }
 export function viewFactory_AppComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.AppComponent> {

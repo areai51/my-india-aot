@@ -16,6 +16,11 @@ import * as import8 from '@angular/core/src/change_detection/change_detection';
 import * as import9 from '@angular/core/src/metadata/view';
 import * as import10 from '@angular/core/src/linker/component_factory';
 import * as import11 from './side-bar.component.css.shim';
+import * as import12 from '@angular/router/src/directives/router_link';
+import * as import13 from '@angular/router/src/router';
+import * as import14 from '@angular/router/src/router_state';
+import * as import15 from '@angular/common/src/location/location_strategy';
+import * as import16 from '@angular/core/src/security';
 const nodeDebugInfos_SideBarComponent_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import1.SideBarComponent],import1.SideBarComponent,{})];
 var renderType_SideBarComponent_Host:import2.RenderComponentType = (null as any);
 class _View_SideBarComponent_Host0 extends import3.DebugAppView<any> {
@@ -64,19 +69,19 @@ const nodeDebugInfos_SideBarComponent0:import0.StaticNodeDebugInfo[] = [
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
+  new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
+  new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
+  new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
+  new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
@@ -98,23 +103,35 @@ class _View_SideBarComponent0 extends import3.DebugAppView<import1.SideBarCompon
   _text_9:any;
   _el_10:any;
   _el_11:any;
+  _RouterLinkWithHref_11_3:import12.RouterLinkWithHref;
   _text_12:any;
   _text_13:any;
   _el_14:any;
   _el_15:any;
+  _RouterLinkWithHref_15_3:import12.RouterLinkWithHref;
   _text_16:any;
   _text_17:any;
   _el_18:any;
   _el_19:any;
+  _RouterLinkWithHref_19_3:import12.RouterLinkWithHref;
   _text_20:any;
   _text_21:any;
   _el_22:any;
   _el_23:any;
+  _RouterLinkWithHref_23_3:import12.RouterLinkWithHref;
   _text_24:any;
   _text_25:any;
   _text_26:any;
   _text_27:any;
   _text_28:any;
+  /*private*/ _expr_1:any;
+  /*private*/ _expr_2:any;
+  /*private*/ _expr_4:any;
+  /*private*/ _expr_5:any;
+  /*private*/ _expr_7:any;
+  /*private*/ _expr_8:any;
+  /*private*/ _expr_10:any;
+  /*private*/ _expr_11:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_SideBarComponent0,renderType_SideBarComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_SideBarComponent0);
   }
@@ -139,26 +156,42 @@ class _View_SideBarComponent0 extends import3.DebugAppView<import1.SideBarCompon
     this._el_10 = this.renderer.createElement(this._el_8,'li',this.debug(10,5,6));
     this._el_11 = this.renderer.createElement(this._el_10,'a',this.debug(11,5,10));
     this.renderer.setElementAttribute(this._el_11,'routerLink','/our-leaders');
+    this._RouterLinkWithHref_11_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router),this.parentInjector.get(import14.ActivatedRoute),this.parentInjector.get(import15.LocationStrategy));
     this._text_12 = this.renderer.createText(this._el_11,'Our Leaders',this.debug(12,5,39));
     this._text_13 = this.renderer.createText(this._el_8,'\n      ',this.debug(13,5,59));
     this._el_14 = this.renderer.createElement(this._el_8,'li',this.debug(14,6,6));
     this._el_15 = this.renderer.createElement(this._el_14,'a',this.debug(15,6,10));
     this.renderer.setElementAttribute(this._el_15,'routerLink','/crime-in-the-city');
+    this._RouterLinkWithHref_15_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router),this.parentInjector.get(import14.ActivatedRoute),this.parentInjector.get(import15.LocationStrategy));
     this._text_16 = this.renderer.createText(this._el_15,'Crime in Cities',this.debug(16,6,45));
     this._text_17 = this.renderer.createText(this._el_8,'\n      ',this.debug(17,6,69));
     this._el_18 = this.renderer.createElement(this._el_8,'li',this.debug(18,7,6));
     this._el_19 = this.renderer.createElement(this._el_18,'a',this.debug(19,7,10));
     this.renderer.setElementAttribute(this._el_19,'routerLink','');
+    this._RouterLinkWithHref_19_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router),this.parentInjector.get(import14.ActivatedRoute),this.parentInjector.get(import15.LocationStrategy));
     this._text_20 = this.renderer.createText(this._el_19,'Accidents in Cities',this.debug(20,7,27));
     this._text_21 = this.renderer.createText(this._el_8,'\n      ',this.debug(21,7,55));
     this._el_22 = this.renderer.createElement(this._el_8,'li',this.debug(22,8,6));
     this._el_23 = this.renderer.createElement(this._el_22,'a',this.debug(23,8,10));
     this.renderer.setElementAttribute(this._el_23,'routerLink','our-rivers');
+    this._RouterLinkWithHref_23_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router),this.parentInjector.get(import14.ActivatedRoute),this.parentInjector.get(import15.LocationStrategy));
     this._text_24 = this.renderer.createText(this._el_23,'Our Rivers',this.debug(24,8,37));
     this._text_25 = this.renderer.createText(this._el_8,'\n    ',this.debug(25,8,56));
     this._text_26 = this.renderer.createText(this._el_6,'\n  ',this.debug(26,9,9));
     this._text_27 = this.renderer.createText(this._el_1,'\n',this.debug(27,10,8));
     this._text_28 = this.renderer.createText(parentRenderNode,'\n\n  ',this.debug(28,11,8));
+    var disposable_0:Function = this.renderer.listen(this._el_11,'click',this.eventHandler(this._handle_click_11_0.bind(this)));
+    this._expr_1 = import8.UNINITIALIZED;
+    this._expr_2 = import8.UNINITIALIZED;
+    var disposable_1:Function = this.renderer.listen(this._el_15,'click',this.eventHandler(this._handle_click_15_0.bind(this)));
+    this._expr_4 = import8.UNINITIALIZED;
+    this._expr_5 = import8.UNINITIALIZED;
+    var disposable_2:Function = this.renderer.listen(this._el_19,'click',this.eventHandler(this._handle_click_19_0.bind(this)));
+    this._expr_7 = import8.UNINITIALIZED;
+    this._expr_8 = import8.UNINITIALIZED;
+    var disposable_3:Function = this.renderer.listen(this._el_23,'click',this.eventHandler(this._handle_click_23_0.bind(this)));
+    this._expr_10 = import8.UNINITIALIZED;
+    this._expr_11 = import8.UNINITIALIZED;
     this.init([],[
       this._text_0,
       this._el_1,
@@ -190,8 +223,128 @@ class _View_SideBarComponent0 extends import3.DebugAppView<import1.SideBarCompon
       this._text_27,
       this._text_28
     ]
-    ,[],[]);
+    ,[
+      disposable_0,
+      disposable_1,
+      disposable_2,
+      disposable_3
+    ]
+    ,[]);
     return (null as any);
+  }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import12.RouterLinkWithHref) && ((11 <= requestNodeIndex) && (requestNodeIndex <= 12)))) { return this._RouterLinkWithHref_11_3; }
+    if (((token === import12.RouterLinkWithHref) && ((15 <= requestNodeIndex) && (requestNodeIndex <= 16)))) { return this._RouterLinkWithHref_15_3; }
+    if (((token === import12.RouterLinkWithHref) && ((19 <= requestNodeIndex) && (requestNodeIndex <= 20)))) { return this._RouterLinkWithHref_19_3; }
+    if (((token === import12.RouterLinkWithHref) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 24)))) { return this._RouterLinkWithHref_23_3; }
+    return notFoundResult;
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    var changes:{[key: string]:import8.SimpleChange} = (null as any);
+    this.debug(11,5,10);
+    changes = (null as any);
+    this.debug(11,5,13);
+    const currVal_1:any = '/our-leaders';
+    if (import5.checkBinding(throwOnChange,this._expr_1,currVal_1)) {
+      this._RouterLinkWithHref_11_3.routerLink = currVal_1;
+      if ((changes === (null as any))) { (changes = {}); }
+      changes['routerLink'] = new import8.SimpleChange(this._expr_1,currVal_1);
+      this._expr_1 = currVal_1;
+    }
+    if ((changes !== (null as any))) { this._RouterLinkWithHref_11_3.ngOnChanges(changes); }
+    this.debug(15,6,10);
+    changes = (null as any);
+    this.debug(15,6,13);
+    const currVal_4:any = '/crime-in-the-city';
+    if (import5.checkBinding(throwOnChange,this._expr_4,currVal_4)) {
+      this._RouterLinkWithHref_15_3.routerLink = currVal_4;
+      if ((changes === (null as any))) { (changes = {}); }
+      changes['routerLink'] = new import8.SimpleChange(this._expr_4,currVal_4);
+      this._expr_4 = currVal_4;
+    }
+    if ((changes !== (null as any))) { this._RouterLinkWithHref_15_3.ngOnChanges(changes); }
+    this.debug(19,7,10);
+    changes = (null as any);
+    this.debug(19,7,13);
+    const currVal_7:any = '';
+    if (import5.checkBinding(throwOnChange,this._expr_7,currVal_7)) {
+      this._RouterLinkWithHref_19_3.routerLink = currVal_7;
+      if ((changes === (null as any))) { (changes = {}); }
+      changes['routerLink'] = new import8.SimpleChange(this._expr_7,currVal_7);
+      this._expr_7 = currVal_7;
+    }
+    if ((changes !== (null as any))) { this._RouterLinkWithHref_19_3.ngOnChanges(changes); }
+    this.debug(23,8,10);
+    changes = (null as any);
+    this.debug(23,8,13);
+    const currVal_10:any = 'our-rivers';
+    if (import5.checkBinding(throwOnChange,this._expr_10,currVal_10)) {
+      this._RouterLinkWithHref_23_3.routerLink = currVal_10;
+      if ((changes === (null as any))) { (changes = {}); }
+      changes['routerLink'] = new import8.SimpleChange(this._expr_10,currVal_10);
+      this._expr_10 = currVal_10;
+    }
+    if ((changes !== (null as any))) { this._RouterLinkWithHref_23_3.ngOnChanges(changes); }
+    this.detectContentChildrenChanges(throwOnChange);
+    this.debug(11,5,10);
+    const currVal_2:any = this._RouterLinkWithHref_11_3.href;
+    if (import5.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
+      this.renderer.setElementProperty(this._el_11,'href',this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL,currVal_2));
+      this._expr_2 = currVal_2;
+    }
+    this.debug(15,6,10);
+    const currVal_5:any = this._RouterLinkWithHref_15_3.href;
+    if (import5.checkBinding(throwOnChange,this._expr_5,currVal_5)) {
+      this.renderer.setElementProperty(this._el_15,'href',this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL,currVal_5));
+      this._expr_5 = currVal_5;
+    }
+    this.debug(19,7,10);
+    const currVal_8:any = this._RouterLinkWithHref_19_3.href;
+    if (import5.checkBinding(throwOnChange,this._expr_8,currVal_8)) {
+      this.renderer.setElementProperty(this._el_19,'href',this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL,currVal_8));
+      this._expr_8 = currVal_8;
+    }
+    this.debug(23,8,10);
+    const currVal_11:any = this._RouterLinkWithHref_23_3.href;
+    if (import5.checkBinding(throwOnChange,this._expr_11,currVal_11)) {
+      this.renderer.setElementProperty(this._el_23,'href',this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL,currVal_11));
+      this._expr_11 = currVal_11;
+    }
+    this.detectViewChildrenChanges(throwOnChange);
+  }
+  destroyInternal():void {
+    this.debug(11,5,10);
+    this._RouterLinkWithHref_11_3.ngOnDestroy();
+    this.debug(15,6,10);
+    this._RouterLinkWithHref_15_3.ngOnDestroy();
+    this.debug(19,7,10);
+    this._RouterLinkWithHref_19_3.ngOnDestroy();
+    this.debug(23,8,10);
+    this._RouterLinkWithHref_23_3.ngOnDestroy();
+  }
+  private _handle_click_11_0($event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    this.debug(11,5,10);
+    const pd_0:any = ((<any>this._RouterLinkWithHref_11_3.onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+    return (true && pd_0);
+  }
+  private _handle_click_15_0($event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    this.debug(15,6,10);
+    const pd_0:any = ((<any>this._RouterLinkWithHref_15_3.onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+    return (true && pd_0);
+  }
+  private _handle_click_19_0($event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    this.debug(19,7,10);
+    const pd_0:any = ((<any>this._RouterLinkWithHref_19_3.onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+    return (true && pd_0);
+  }
+  private _handle_click_23_0($event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    this.debug(23,8,10);
+    const pd_0:any = ((<any>this._RouterLinkWithHref_23_3.onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
+    return (true && pd_0);
   }
 }
 export function viewFactory_SideBarComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.SideBarComponent> {
